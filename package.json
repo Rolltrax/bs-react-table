@@ -1,0 +1,37 @@
+{
+  "name": "bs-react-table",
+  "version": "0.1.1",
+  "description": "React Table for Reason",
+  "main": "lib/js/src/ReactTable.js",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "BuckleScript",
+    "table",
+    "react-table",
+    "react-component",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dusterherz/bs-react-table"
+  },
+  "bugs": {
+    "url": "https://github.com/dusterherz/bs-react-table/issues"
+  },
+  "homepage": "https://github.com/dusterherz/bs-react-table#readme",
+  "author": "Aude Lejuez <dusterherz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-table": "^6.8.0",
+    "reason-react": ">=0.3.0"
+  },
+  "devDependencies": {
+    "bs-platform": "^2.2.2"
+  }
+}
