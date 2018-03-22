@@ -57,7 +57,7 @@ let make = _children => {
 };
 ```
 
-## Greetings
+## Thanks
 
 * [@insidersByte](https://github.com/InsidersByte) and his reason binding of
   material-ui, [bs-material-ui](https://github.com/InsidersByte/bs-material-ui).
