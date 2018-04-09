@@ -4,7 +4,7 @@ module ReactTable = {
   let make =
       (
         ~data: option(array(Js.t({..})))=?,
-        ~loading: option(Js.Js.booleanean)=?,
+        ~loading: option(Js.boolean)=?,
         ~showPagination: option(Js.boolean)=?,
         ~showPaginationTop: option(Js.boolean)=?,
         ~showPaginationBottom: option(Js.boolean)=?,
