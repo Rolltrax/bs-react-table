@@ -1,18 +1,13 @@
 # bs-react-table
 
-Reason binding for [react-table](https://github.com/react-tools/react-table)
+Bucklescript/Reason bindings for [react-table](https://github.com/react-tools/react-table)
 
-## Status
+## Info
 
-🚧 WIP
+🚧 This is a WIP library. Most of the basic features are implemented, but some are still left not working. If you would like to help with the development effort, feel free to submit a pull request 🚧
 
-All the features should be supported but a lot of them uses Javascript objects
-for the moment. The css need also to be import inside the HTML.
+This library provides Bucklescript bindings for [react-table](https://github.com/react-tools/react-table)
 
-To see current progress and questions, look at the issues.
-
-Don't hesitate to create issue to report a problem and create PR to add MOAR
-types !
 
 ## Installation
 
@@ -56,10 +51,3 @@ let make = _children => {
   render: self => <ReactTable.ReactTable columns data label=(Some("test")) />,
 };
 ```
-
-## Thanks
-
-* [@insidersByte](https://github.com/InsidersByte) and his reason binding of
-  material-ui, [bs-material-ui](https://github.com/InsidersByte/bs-material-ui).
-  This library helps me a lot to understand how to do bindings and a lot of other
-  stuff !

@@ -3,17 +3,23 @@
   comma. If this screws with your editor highlighting, please tell us by filing
   an issue! */
 {
-  "name": "bs-react-table",
+  "name": "react-template",
   "reason": {
     "react-jsx": 2
   },
   "sources": {
-    "dir": "src"
+    "dir" : "src",
+    "subdirs" : true
   },
-  "namespace": false,
-  "bs-dependencies": ["reason-react"],
-  "refmt": 3,
-  "warnings": {
-    "error": "+5"
-  }
+  "package-specs": [{
+    "module": "commonjs",
+    "in-source": true
+  }],
+  "suffix": ".bs.js",
+  "namespace": true,
+  "bs-dependencies": [
+    "reason-react",
+    "bs-react-table"
+  ],
+  "refmt": 3
 }
