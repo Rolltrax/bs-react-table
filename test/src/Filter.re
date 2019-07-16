@@ -1,4 +1,4 @@
-open ReactTable;
+open BsReactTable;
 let columns = [|
   {"Header": "First Name", "accessor": "firstname"},
   {"Header": "Last Name", "accessor": "lastname"},
@@ -8,7 +8,7 @@ let data = [|
   {"firstname": "Zach", "lastname": "Baylin"}
 |];
 
-let component = ReasonReact.statelessComponent("Filter");
+/* let component = ReasonReact.statelessComponent("Filter");
 
 let make = (_children) => {
   ...component,
@@ -26,4 +26,21 @@ let make = (_children) => {
     })
     label=None
     />
-};
+}; */
+
+[@react.component]
+let make = () => {
+  <ReactTable
+    columns
+    data
+    filterable=true
+    defaultFilterMethod=((x,y,z) => {
+      let id = Js.Dict.unsafeGet(x, "id");
+      let value = Js.Dict.unsafeGet(x, "value")
+      let column = Js.Dict.unsafeGet(y, id);
+      
+      Js.Re.test_(Js.Re.fromStringWithFlags(value, ~flags="gi"), Obj.magic(column))
+    })
+    label=None
+    />
+}

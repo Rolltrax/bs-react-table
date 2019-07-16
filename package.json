@@ -1,6 +1,6 @@
 {
   "name": "bs-react-table",
-  "version": "0.1.4",
+  "version": "2.0.0",
   "description": "React Table for Reason",
   "main": "lib/js/src/ReactTable.js",
   "scripts": {
@@ -18,20 +18,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dusterherz/bs-react-table"
+    "url": "git+https://github.com/Rolltrax/bs-react-table"
   },
   "bugs": {
-    "url": "https://github.com/dusterherz/bs-react-table/issues"
+    "url": "https://github.com/Rolltrax/bs-react-table/issues"
   },
-  "homepage": "https://github.com/dusterherz/bs-react-table#readme",
-  "author": "Aude Lejuez <dusterherz@gmail.com>",
+  "homepage": "https://github.com/Rolltrax/bs-react-table#readme",
+  "author": "Zach Baylin <zach@mail.rolltrax.com>",
   "license": "MIT",
   "dependencies": {
     "react": "^16.5.2",
     "react-table": "^6.8.6",
-    "reason-react": "^0.5.3"
+    "reason-react": "^0.7.0"
   },
   "devDependencies": {
-    "bs-platform": "^4.0.6"
+    "bs-platform": "^5.0.6"
   }
 }

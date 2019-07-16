@@ -5,12 +5,12 @@
 {
   "name": "bs-react-table",
   "reason": {
-    "react-jsx": 2
+    "react-jsx": 3
   },
   "sources": {
     "dir": "src"
   },
-  "namespace": false,
+  "namespace": true,
   "bs-dependencies": ["reason-react"],
   "refmt": 3,
   "warnings": {
